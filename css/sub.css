@@ -29,8 +29,13 @@ button:nth-child(3) {background-color: bisque; border-radius: 3px; padding: 10px
 #pro-pic h1 {text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 30px;}
 #pro-pic img { width: 200px; height: 200px; margin: 10px 10px 10px 10px;}
 
-#detail { width: 1140px; height: 125px; margin: 0 auto; padding-right: 330px; box-sizing: border-box; vertical-align: top;}
-#detail ul { width: 500px; height: 500px; text-align: center; margin: 0 auto; }
-#detail li {
-    display: inline-block; position: relative; text-align: center; box-sizing: border-box; padding: 30px 30px 30px 60px; font-size: 20pt; 
-}
+#shipping {width:1200px; height:500px; margin:200px auto 0;}
+#shipping > ul {width:1200px; height:50px; margin:40px auto 0px;}
+#shipping > ul > li {width:300px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:13px;}
+#shipping > ul > li > a {color:#000;} 
+#shipping > ul > li:nth-child(2) {background-color:#fff; border:1px solid #000; border-bottom:none; color:#000;}
+
+#shipping > h2 {float:left; padding:50px 20px 0px; font-size:19px;}
+#shipping > #shipping_textbox {width:100%; height:270px;}
+#shipping > #shipping_textbox > ul {display:block; width:1100px; height:280px; margin:100px 35px 0px;}
+#shipping > #shipping_textbox > ul > li {font-size:13px; list-style:disc; margin:7px 10px; color:#666;}
