@@ -12,15 +12,18 @@
 
 #sub h3 {padding:30px 30px 30px 30px; font-size:30px; text-align:left;}
 
-table {width: 500px; border-top: 3px solid #e9e9e9; border-bottom: 1px solid #e9e9e9; position: absolute; top: 100px; right: 30px; text-align: center;}
+.table {width: 500px; border-top: 3px solid #e9e9e9; border-bottom: 1px solid #e9e9e9; position: absolute; top: 100px; right: 30px; text-align: center;}
 
-td {padding: 6px 15px;}
-td:first-child {width: 100px;}
+.table td {padding: 6px 15px;}
+.table td:first-child {width: 100px;}
 
-button {margin: 3px; cursor: pointer;}
-button:first-child {background-color: bisque; border-radius: 3px; padding: 10px 20px; color: #666; border: none;}
-button:nth-child(2) {background-color: bisque; border-radius: 3px; padding: 10px 20px; color:#666; border: none; border: 1px solid #ddd;}
-button:nth-child(3) {background-color: bisque; border-radius: 3px; padding: 10px 20px; color:#666; border: none; border: 1px solid #ddd;}
+.table button {margin: 3px; cursor: pointer; font-weight: bold; text-decoration: black;}
+.table button:first-child {background-color: #72af2c; border-radius: 3px; padding: 10px 20px; color: #000; border: none;}
+.table button:nth-child(2) {background-color: #72af2c; border-radius: 3px; padding: 10px 20px; color:#000; border: none; border: 1px solid #ddd;}
+.table button:nth-child(3) {background-color: #72af2c; border-radius: 3px; padding: 10px 20px; color:#000; border: none; border: 1px solid #ddd;}
+
+#detail {margin: 0 auto;}
+#detail img {display: block; margin: 0 auto;}
 
 #pro-pic {width: 1140px; height: 400px; margin: 0 auto; padding: 30px;}
 .selling {width: 200px; height: 200px; display: inline-block; margin: 10px 10px 10px 30px; }
@@ -29,16 +32,41 @@ button:nth-child(3) {background-color: bisque; border-radius: 3px; padding: 10px
 #pro-pic h1 {text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 30px;}
 #pro-pic img { width: 200px; height: 200px; margin: 10px 10px 10px 10px;}
 
-#shipping {width:1200px; height:500px; margin:200px auto 0;}
-#shipping > ul {width:1200px; height:50px; margin:40px auto 0px;}
-#shipping > ul > li {width:300px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; border:1px solid #ddd; border-bottom:1px solid #000; font-size:13px;}
-#shipping > ul > li > a {color:#000;} 
+#shoppingbar {width: 1140px; height:auto; margin:50px auto 0;}
+#shoppingbar > ul {width:1140px; height:50px; margin:40px auto 0px;}
+#shoppingbar > ul > li {width:285px; height:100%; background-color:#eee; float:left; text-align:center; padding:15px 0 0 0px; 
+                        border:1px solid #ddd; border-bottom:1px solid #000; font-size:13px;}
+#shoppingbar > ul > li > a {color:#000; text-decoration: none;} 
 
-
-#shipping > h2 {float:left; padding:50px 20px 0px; font-size:19px;}
-#shipping > #shipping_textbox {width:100%; height:270px;}
-#shipping > #shipping_textbox > ul {display:block; width:1100px; height:280px; margin:100px 35px 0px;}
-#shipping > #shipping_textbox > ul > li {font-size:13px; list-style:disc; margin:7px 10px; color:#666;}
 
 #detail {margin: 0 auto;}
-#detail img{margin: 0 auto;}
+#detail img {display: block; margin: 0 auto; padding: 30px;}
+#shoppingbar > .under1 > li:nth-of-type(1) {background-color:#fff; border:1px solid #000; border-bottom:none;}
+
+#shoppingbar > h2 {float:left; padding:50px 20px 0px; font-size:19px;}
+#shoppingbar > #delivery {width:100%; height:270px;}
+#shoppingbar > .under2 > li:nth-of-type(2) {background-color:#fff; border:1px solid #000; border-bottom:none;}
+#shoppingbar > #delivery > ul {display:block; width:1100px; height:280px; margin:100px 35px 0px;}
+#shoppingbar > #delivery > ul > li {font-size:13px; list-style:disc; margin:7px 10px; color:#000;}
+
+
+
+#shoppingbar > #review {width:100%; height:450px; margin:0 auto; text-align:center;}
+#shoppingbar > .under3 > li:nth-of-type(3) {background-color:#fff; border:1px solid #000; border-bottom:none;}
+#shoppingbar > #review > button {float:right; margin:25px 0px; width:120px; height:30px; color:#fff; font-size:12px; background-color:#333; border:1px solid #ddd;}
+#shoppingbar > #review > button:hover {cursor:pointer;}
+#shoppingbar > #review > table {display:inline-block; margin:0px auto; border-top:1px solid #333; line-height:50px; width:1140px; font-size:13px; color:#333;}
+
+#review table th {width: 80px; border-bottom: 1px solid #eee;}
+#review table td:first-of-type {width: 770px; border-bottom: 1px solid #eee;}
+#review table td:first-of-type>a {color: #333;}
+#review table td:nth-of-type(2) {width: 80px; text-align: center; border-bottom: 1px solid #eee;}
+#review table td:nth-of-type(3) {width: 120px; text-align: center; border: 1px solid #eee;}
+#review table td:last-of-type {width: 150px; text-align: center; border-bottom: 1px solid #eee;}
+
+#shoppingbar > #inquiry {width: 100%; height: 200px; background-color: #eee; box-shadow: 4px 4px 4px 4px #000; margin: 10px 10px 30px 10px;}
+#shoppingbar > .under4 > li:nth-of-type(4) {background-color:#fff; border:1px solid #000; border-bottom:none;}
+#shoppingbar > #inquiry span {font-size: 20pt;}
+#shoppingbar > #inquiry > ul {display:block; width:1100px; height:200px; margin:100px 35px 0px; padding: 10px 10px 10px 10px;}
+#shoppingbar > #inquiry > ul > li {font-size:13px; list-style:disc; margin:7px 10px; color:#000;}
+#shoppingbar > #inquiry button {float:left; margin:25px 0px; width:120px; height:30px; color:#fff; font-size:12px; background-color:#333; border:1px solid #ddd;}

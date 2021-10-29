@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>비비고 구매페이지</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sub.css" type="text/css">
     <link rel="stylesheet" href="css/common.css">
@@ -42,11 +42,11 @@
                     <td>9,800원</td>
                 </tr>
                 <tr>
-                    <td>적립금혜택</td>
+                    <td>적립금</td>
                     <td>98p</td>
                 </tr>
                 <tr>
-                    <td>카드사 해택</td>
+                    <td>카드사</td>
                     <td>CJ ONE 계열</td>
                 </tr>
                 <tr>
@@ -55,7 +55,7 @@
                 </tr>
                 <tr>
                     <td>배송비</td>
-                    <td>조건부무료배송</td>
+                    <td>3000원</td>
                 </tr>
                 <tr>
                     <td>수량</td>
@@ -103,35 +103,122 @@
             </div>
         </div>
 
-        <div id="shipping">
-            <ul>
-                <li><a href="#detail">상품상세정보</a></li>
-                <li><a href="shipping_textbox">배송안내</a></li>
-                <li><a href="#review">상품후기</a></li>
-                <li><a href="#inquiry">상품문의</a></li>
+        <div id="shoppingbar">
+            <ul class="under1">
+                <li><a href="#under1">상품상세정보</a></li>
+                <li><a href="#under2">배송안내</a></li>
+                <li><a href="#under3">상품후기</a></li>
+                <li><a href="#under4">상품문의</a></li>
             </ul>
             <div id="detail">
                 <img src="img/제품 상세정보.jpg" alt="제품 상세정보">
+                <img src="img/상세정보.jpg" alt="제품 상세표기">
+                <img src="img/상세정보2.jpg" alt="제품 상제정보2">
             </div>
+        </div>
 
+            <hr>
+
+        <div id="shoppingbar">
+            <ul class="under2">
+                <li><a href="#detail">상품상세정보</a></li>
+                <li><a href="#delivery">배송안내</a></li>
+                <li><a href="#review">상품후기</a></li>
+                <li><a href="#inquiry">상품문의</a></li>
+            </ul>
             <h2>배송안내</h2>
-            <div id="shipping_textbox">
+            <div id="delivery">
                 <ul>
-                    <li>배송료 : 50,000원 이상 구매 시 무료배송, 그 이하는 각 박스당 3,000원의 배송비를 부담하셔야 합니다.<br>
-                        (도서, 산간, 오지, 제주도, 일부지역, 설치 배송 상품 등은 배송비가 추가될 수 있습니다.)</li>
-                    <li>부피가 큰 상품은 2박스 이상으로 따로 출고되는 경우가 있으며, 변심으로 인한 반품시 2박스 이상에 대한 왕복 배송비를 부담하셔야 합니다.</li>
-                    <li>제품에 따라 출고지가 다른 제품의 경우, 변심반품시 왕복배송비가 개별부과될 수 있습니다.</li>
-                    <li>배송시간 : 입금확인 후 평균 2~3일 이내에 받아보실 수 있습니다. (주말, 공휴일, 천재지변 제외)</li>
-                    <li>상품을 여러가지 구매하셨을 경우 여러 박스로 부분 포장되어 발송될 수 있으며, 배송 도착 날짜와 시간이 다를 수도 있습니다.</li>
-                    <li>오후 2시 이후 주문 후 취소나 배송지/옵션 변경 시 고객센터로 연락 주시면 신속히 변경 처리해드립니다.</li>
-                    <li>아래와 같은 경우 입금확인이 어려워 배송이 지연될 수 있습니다. (고객센터로 연락요망)<br>
-                        주문자와 입금자가 달라 확인이 되지 않는 경우 / 주문금액과 입금 금액이 다를 경우 / 주문보다 입금을 먼저 하신 경우</li>
-                    <li>주문 후 7일 이내에 입금하지 않으면 주문이 자동 취소됩니다.</li>
-                    <li>피스(나사못)는 동봉되지 않으며, 필요시 배송 요청 사항에 기재해주세요.</li>
-                    <li>동봉되는 피스는 일반/목재용임으로 콘크리트, 석고 등에 사용하는 특수한 피스는 따로 준비하셔야 됩니다.</li>
+                    <li>주문한 상품은 결제완료 후 3일 이내 출고 됩니다. (토, 공휴일 제외)</li>
+                    <li>상품 출고일은 상품/지역/업체별 상황에 따라 변경될 수 있으며, 주문량 증가 시 배송이 지연될 수 있습니다.</li>
+                    <li>냉장, 냉동, 신선제품은 신선도 유지를 위해 제주도 및 도서산간 지역의 배송이 제한될 수 있습니다.</li>
+                    <li>고객님의 주소 기입 오류, 임의 수취거부, 고객 부재로 인해 반송될 경우 배송비가 청구될 수 있습니다.</li>
+                    <li>주문 수량이 많거나 BOX제품을 동시에 구매하는 경우, 안전배송을 위해 다수의 박스로 배송될 수 있으며<br>
+                        택배사 사정에 따라 박스별 배송 일정이 다를 수 있습니다.</li>
+                    <li>(마이페이지 > 주문배송현황 > ‘배송조회’ 버튼 클릭 시, 출력되는 ‘운송장 번호’로 택배 개수 확인 가능)</li>
                 </ul>
             </div>
         </div>
+
+            <hr>
+
+        <div id="shoppingbar">
+            <ul class="under3">
+                <li><a href="#detail">상품상세정보</a></li>
+                <li><a href="#delivery">배송안내</a></li>
+                <li><a href="#review">상품후기</a></li>
+                <li><a href="#inquiry">상품문의</a></li>
+            </ul>
+            <h2>상품후기</h2>
+            <div id="review">
+            <button>상품후기 글쓰기</button>
+            <button>상품후기 전체보기</button>
+
+                <table>
+                    <tr>
+                        <th>5</th>
+                        <td>추천해요</td>
+                        <td>chaud***</td>
+                        <td>2021.10.29</td>
+                        <td>★★★★★</td>
+                    </tr>
+
+                    <tr>
+                        <th>4</th>
+                        <td>추천해요</td>
+                        <td>dkrh***</td>
+                        <td>2021.10.29</td>
+                        <td>★★★★★</td>
+                    </tr>
+
+                    <tr>
+                        <th>3</th>
+                        <td>추천해요</td>
+                        <td>cpps***</td>
+                        <td>2021.10.29</td>
+                        <td>★★★★★</td>
+                    </tr>
+
+                    <tr>
+                        <th>2</th>
+                        <td>추천해요</td>
+                        <td>dfddd***</td>
+                        <td>2021.10.29</td>
+                        <td>★★★★★</td>
+                    </tr>
+
+                    <tr>
+                        <th>1</th>
+                        <td>추천해요</td>
+                        <td>cdffd***</td>
+                        <td>2021.10.29</td>
+                        <td>★★★★★</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+            <hr>
+
+        <div id="shoppingbar">
+            <ul class="under4">
+                <li><a href="#detail">상품상세정보</a></li>
+                <li><a href="#delivery">배송안내</a></li>
+                <li><a href="#review">상품후기</a></li>
+                <li><a href="#inquiry">상품문의</a></li>
+            </ul>
+            <h2>상품문의</h2>
+            <div id="inquiry">
+                <ul>
+                    <span>상품 관련 궁금하신 사항이 있으면 궁금하신 점을 문의해 주세요.</span>
+                    <li>고객님의 질문에 정성껏 빠르게 답변해 드리겠습니다.</li>
+                    <li>작성해주신 문의내역 및 답변은 마이페이지 > 활동정보 > 1:1 문의내역 메뉴에서 확인 가능합니다.</li>
+                    <button>문의하기</button>
+                </ul>
+            </div>
+        </div>
+
+       
 
         <footer>
 
